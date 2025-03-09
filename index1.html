@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seckonnect</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index1.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+        <div class="img">
+         
+           <img src="D:\necurity\Seconnecttfinal.png" alt=""  width="880px">
+       
+      </div>
+    </header>
+
+    <!-- Wi-Fi Section -->
+    <div class="one">
+        <div class="wifi-section">
+            <h2><i class="fas fa-wifi"></i> WI-FI</h2>
+            <div class="align">
+                <div class="wifi">
+                    <p>Status: <span class="status-yellow"> Connecting</span></p>
+                    <p>&nbsp;IP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span class="status-yellow">Connecting</span></p>
+                    <p>&nbsp;SSID&nbsp;&nbsp;: <span class="status-yellow"> Connecting</span></p>
+                </div>
+                <div class="inp">
+                    <input type="password" placeholder="Password">
+                    <select>
+                     
+                        <option> Select a Network</option>
+                        <option>Home Network</option>
+                        <option>Fiber Network</option>
+                      
+                    
+                    </select>
+                </div>
+            </div>
+            <button class="wifi-btn"><i class="fas fa-wifi"></i> Connecting</button><br>
+            <button class="refresh-btn"><strong><i class="fas fa-sync-alt"></i> Refresh</strong></button>
+        </div>
+
+        <!-- Empty Green Box (Placeholder) -->
+        <div class="card empty-box"> 
+          <img src="D:\necurity\connecting.gif" alt="" width="500" height="400">
+        </div>
+    </div><br><br><br><br>
+    <div class="sevlan">
+        <!-- Server IP -->
+        <div class="server-ip">
+            <h3><i class="fas fa-server"></i> Server IP</h3><br>
+            <input type="text" placeholder="Server IP"><br><br>
+            <button class="save-btn"><i class="fas fa-save"></i> Save</button>
+           
+        </div>
+            <!-- LAN Section -->
+            <div class="lan-section">
+            <h3><i class="fas fa-network-wired"></i> LAN</h3><br>
+            <p>IP:<span  class="status-yellow"> Connecting</IP:span> </p>
+        </div>
+    </div><br><br><br>
+    <!-- Status Bar -->
+    <div class="status-bar">
+      <div class="status onea"><i class="fas fa-laptop"></i> LAN :<span class="status-yellow"> Activating</span></div>
+      <div class="status two"><i class="fas fa-wifi"></i> Wi-Fi :<span class="status-yellow">Activating</span></div>
+      <div class="status three"><i class="fas fa-globe"></i> Internet Connectivity :<span class="status-yellow"> Activating</span></div>
+      <div class="status four"><i class="fas fa-plug"></i> Seckonnect Status :<span class="status-yellow">Activating</span></div>
+    </div>
+
+    <!-- Graph Status -->
+    <div class="graph">
+      <h3><i class="fas fa-chart-line"></i> GRAPH STATUS</h3>
+      <p>Speed: 0.00</p>
+    </div>
+      <div class="graph-box"></div>
+      <script>
+        setTimeout(function() {
+            window.location.href = 'index2.html'; // Redirect to Page 3 after 5 seconds
+        }, 5000);
+        </script>
+   
+  </div>
+</body>
+</html>
