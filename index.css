@@ -9,7 +9,13 @@
   background: #f5f5f5;
   text-align: center;
 }
+.refresh-btn i {
+  transition: transform 1s ease;
+}
 
+.refresh-btn .rotating {
+  transform: rotate(360deg);
+}
 img{
     align-items: center;
     padding-left: 30%;
