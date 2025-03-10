@@ -44,7 +44,7 @@
                 </div>
             </div>
             <button class="wifi-btn" onclick="navigateToPag() "><i class="fas fa-wifi"></i> Disconnect</button><br>
-            <button class="refresh-btn"><strong><i class="fas fa-sync-alt"></i> Refresh</strong></button>
+            <button class="refresh-btn"><strong><i class="fas fa-sync-alt" id="refresh-icon"></i> Refresh</strong></button>
         </div>
 
         <!-- Empty Green Box (Placeholder) -->
@@ -86,6 +86,17 @@
             window.location.href = 'index4.html';
             }, 2000);
         }
+          function rotateIcon() {
+            const icon = document.getElementById("refresh-icon");
+            // Apply the rotating class
+            icon.classList.add("rotating");
+
+            // Remove the rotating class after the animation is complete (1 second)
+            setTimeout(() => {
+                icon.classList.remove("rotating");
+            }, 1000); // Rotate for 1 second
+        }
+      
         </script>
      
    
